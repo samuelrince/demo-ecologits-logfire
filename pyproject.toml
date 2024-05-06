@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "demo-ecologits-logfire"
+version = "0.1.0"
+description = ""
+authors = ["Samuel Rince <s@rince.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+logfire = "^0.30.0"
+ecologits = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
