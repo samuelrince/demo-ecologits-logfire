@@ -4,11 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["Samuel Rince <s@rince.me>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
 logfire = "^0.30.0"
-ecologits = "^0.1.5"
+ecologits = { version = "^0.1.5", extras = ["openai"] }
+opentelemetry-instrumentation-urllib3 = "^0.45b0"
+opentelemetry-instrumentation-requests = "^0.45b0"
+opentelemetry-instrumentation-sqlite3 = "^0.45b0"
+opentelemetry-instrumentation-urllib = "^0.45b0"
 
 
 [build-system]
